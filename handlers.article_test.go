@@ -1,4 +1,4 @@
-package main
+package main //test
 
 import (
 	"io/ioutil"
@@ -10,7 +10,7 @@ import (
 
 func TestShowIndexPageUnauthenticated(t *testing.T) {
 	r := getRouter(true)
-	r.GET("/", showIndexPage)
+	r.GET("/", ShowIndexPage)
 	req, _ := http.NewRequest("GET", "/", nil)
 
 	testHTTPResponse(t, r, req, func(w *httptest.ResponseRecorder) bool {
