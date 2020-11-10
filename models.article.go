@@ -18,6 +18,7 @@ var articleList = []article{
 func getAllArticles() []article {
 	return articleList
 }
+
 func getArticleById(id int) *article {
 
 	for _, v := range articleList {

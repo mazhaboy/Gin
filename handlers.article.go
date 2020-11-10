@@ -19,7 +19,7 @@ func ShowIndexPage(c *gin.Context) {
 }
 
 func ShowArticlePage(c *gin.Context) {
-	
+
 	if id, err := strconv.Atoi(c.Param("id")); err == nil {
 		art := getArticleById(id)
 
